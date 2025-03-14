@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Large data set, that's sorted run faster
+
+sort2 uses: Merge Sort
+
+How do you know?: Lowest runtime when sorting larger data set
+
+sort3 uses: Selection Sort
+
+How do you know?: Faster for smaller data set, takes longer for larger ones, even though they are sorted
