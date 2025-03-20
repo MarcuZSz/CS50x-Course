@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
     FILE *img = NULL;
     char filename[8];
 
+    //Reading 512 bytes at a time
     while (fread(buffer, 512, 1, file)){
         //Check first four bytes
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0){
