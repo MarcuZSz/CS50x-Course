@@ -1,0 +1,3 @@
+To characterize a Spotify user's audio aura from their top 100 songs in the songs.db database from 2018, they calculate the average energy, valence, and danceability values.
+The calculated averages reveal what the user's music taste leans towards but fails to capture the mood and feelings of the listener.
+A better way would be to use Deep Learning to analyze and understand various feelings the user might have while listening to the songs.
