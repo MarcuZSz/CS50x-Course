@@ -1,0 +1,31 @@
+HTML Tags Used:
+1. <nav> - Defines the navigation bar.
+2. <ul> - Contains the list of navigation links.
+3. <li> - Represents each item in the navigation list.
+4. <a> - Creates hyperlinks between pages.
+5. <header> - Holds introductory content (e.g., jumbotron).
+6. <main> - Encloses the main content.
+7. <section> - Divides the main content into logical sections.
+8. <button> - Provides an interactive element (triggers JavaScript).
+9. <footer> - Displays information at the bottom of the pages.
+10. <script> - Embeds JavaScript functionality.
+
+CSS Selectors Used:
+1. body
+2. h1, h2
+3. .btn-primary
+4. footer
+5. .container
+
+CSS Properties Used:
+1. font-family
+2. background-color
+3. margin
+4. font-size
+5. color
+
+JavaScript Usage:
+- The JavaScript function (showWelcome()) is triggered by a button click to display a welcome alert, adding interactivity to the homepage.
+
+Bootstrap Usage:
+- Bootstrap is used to create a responsive design with pre-built components such as the navigation bar, jumbotron, styled buttons, and a grid system, ensuring the site looks good on mobile devices, laptops, and desktops.

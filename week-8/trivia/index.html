@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function correctAnswer() {
+                const LiSAButton = document.getElementById("LiSAButton");
+                LiSAButton.style.backgroundColor = "green";
+                const ArtistCorrect = document.getElementById("ArtistCorrect");
+                ArtistCorrect.style.visibility = "visible";
+            }
+
+            function wrongAnswer(id) {
+                const button = document.getElementById(id);
+                button.style.backgroundColor = "red";
+                const ArtistWrong = document.getElementById("ArtistWrong");
+                ArtistWrong.style.visibility = "visible";
+            }
+
+            function takeInput(){
+                const StreetFoodInput = document.getElementById("StreetFoodInput").value;
+                const StreetFoodButton = document.getElementById("StreetFoodButton");
+                if (StreetFoodInput.toLowerCase() == "banh mi") {
+                    StreetFoodButton.style.backgroundColor = "green";
+                    const StreetFoodCorrect = document.getElementById("StreetFoodCorrect");
+                    StreetFoodCorrect.style.visibility = "visible";
+                } else {
+                    StreetFoodButton.style.backgroundColor = "red";
+                    const StreetFoodWrong = document.getElementById("StreetFoodWrong");
+                    StreetFoodWrong.style.visibility = "visible";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3>Who is a Japenese Music Artist?</h3>
+                 <p id = "ArtistWrong" style = "visibility: hidden;">Incorrect!</p>
+                 <p id = "ArtistCorrect" style = "visibility: hidden;">Correct!</p>
+                    <button type = "button" id = "linkinParkButton" onclick = "wrongAnswer('linkinParkButton')">Linkin Park</button>
+                    <button type = "button" id = "LiSAButton" onclick = "correctAnswer()">LiSA</button>
+                    <button type = "button" id = "strayKidsButton" onclick = "wrongAnswer('strayKidsButton')">Stray Kids</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>What's the best to go street food in HCM?</h3>
+                    <p id = "StreetFoodWrong" style = "visibility: hidden;">Incorrect!</p>
+                    <p id = "StreetFoodCorrect" style = "visibility: hidden;">Correct!</p>
+
+                    <input type = "text" placeholder="Enter your answer here" id = "StreetFoodInput">
+                    <button type = "button" id = "StreetFoodButton" onclick = "takeInput()">Submit</button>
+            </div>
+        </div>
+    </body>
+</html>
